@@ -1,0 +1,26 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /identity
+
+spring:
+  application:
+    name: identity-service
+  datasource:
+    url: "jdbc:mysql://localhost:3306/ebookteria_identity"
+    driverClassName: "com.mysql.cj.jdbc.Driver"
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+jwt:
+  signerKey: "qYfIi6q9Z63uRyrid/fxDMixAJv0rKpJQhMUfvxLXwZ8FHy2+T1jJNfQJZ+7ziEa"
+  valid-duration: 3600 # in second
+  refreshable-duration: 36000 # in seconds
+
+app:
+  services:
+    profile: http://localhost:8081/profile
