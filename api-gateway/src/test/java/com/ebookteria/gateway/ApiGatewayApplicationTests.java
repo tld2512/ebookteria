@@ -1,4 +1,4 @@
-package com.ebookteria.api_gateway;
+package com.ebookteria.gateway;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
